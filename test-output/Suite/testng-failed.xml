@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" parallel="tests" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="pomPractise.admin.SupplierModule_SmokeTest">
+        <methods>
+          <include name="closeDB"/>
+          <include name="viewTheSupplierList"/>
+          <include name="loginOp"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="logoutOp"/>
+          <include name="connectDB"/>
+        </methods>
+      </class> <!-- pomPractise.admin.SupplierModule_SmokeTest -->
+      <class name="pomPractise.admin.AccountModuleSmokePomTest">
+        <methods>
+          <include name="closeDB"/>
+          <include name="loginOp"/>
+          <include name="launchBrowser"/>
+          <include name="AddAnUserAccount"/>
+          <include name="closeBrowser"/>
+          <include name="logoutOp"/>
+          <include name="connectDB"/>
+        </methods>
+      </class> <!-- pomPractise.admin.AccountModuleSmokePomTest -->
+      <class name="pomPractise.user.VerifyCustomerInCustomerModule_IntegrationTest">
+        <methods>
+          <include name="closeDB"/>
+          <include name="addCustomerFromPOSPage"/>
+          <include name="loginOp"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="logoutOp"/>
+          <include name="connectDB"/>
+        </methods>
+      </class> <!-- pomPractise.user.VerifyCustomerInCustomerModule_IntegrationTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

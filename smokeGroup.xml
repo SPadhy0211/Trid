@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Suite">
+	<groups>
+		<run>
+			<include name="Smoke"></include>
+		</run>
+	</groups>
+  <test thread-count="1" parallel="tests" name="Test">
+    <classes>
+      <class name="pomPractise.admin.SupplierModule_SmokeTest"/>
+      <class name="pomPractise.user.VerifyCustomerInCustomerModule_IntegrationTest"/>
+      <class name="pomPractise.admin.AccountModuleSmokePomTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
